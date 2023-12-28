@@ -1,0 +1,416 @@
+/*index.html*/ 
+h1{
+    color: #025328;
+    font-size: 5em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+/*navigation bar*/
+
+#navBar{
+    background-color: #f8f8f8;
+    height: 70px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .7);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-radius: 5px;
+}
+#navBarImg img{
+    width: 17%;
+    padding-left: 10%;
+}
+
+#navBarLinks{
+    width: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#navBarLinks a{
+   text-decoration: none;
+   font-size: 1.5em;
+   padding: 4%;
+   box-sizing: border-box;
+   color: #666;
+   border-right: 1px solid #5aa170;
+}
+
+#navBarLinks a:hover{
+    background-color: #c3e7c9;
+}
+
+#smallScreenNavBar{
+    width: 40%;
+    height: 100vh;
+    background-color: #f8f8f8;
+    display: flex;
+    transform: translateX(-120%);
+    transition: 0.5s;
+    flex-direction: column;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#smallScreenNavBar div{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#smallScreenNavBar img{
+    width: 40%;
+    align-self: center;
+}
+
+#smallScreenNavBar a{
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 20px;
+    margin-top: 10px;
+    color: #666;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+}
+
+#shade{
+    margin-top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    transition: 0.5;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#smallScreenNavBar a:hover{
+    background-color: #cdebc6;
+}
+/* navigation bar end */
+
+/* home page intro */
+#topBody{
+    height: 650px;
+    box-sizing: border-box;
+    padding: 3%;
+    width: 100%;
+    border-radius: 5px;
+    background-image: url(./images/head\ image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .7);
+}
+
+#topBody p{
+    width: 30%;
+    font-size: 1.8em;
+    margin-top: 0;
+    color: #666;
+}
+
+#menuToggle{
+    width: 40px;
+    left: 3%;
+    position: fixed;
+    border-radius: 10px;
+    display: none;
+    background-color: rgba(0, 0, 0, .1);
+    margin-top: 10px;
+}
+
+#menuToggle:hover{
+    background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+/* home page intro */
+
+/* second body */
+#lowerBody{
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10vh;
+    background-image: url(./images/lower\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeAbout{
+    width: 27%;
+    background-color: white;
+    border-radius: 7px;
+    height: 70vh;
+    padding: 5%;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .7);
+}
+.homeAbout img{
+    width: 100%;
+}
+
+.homeAbout h3{
+    font-size: 1.5em;
+    color: #55a72b;
+}
+/* second body end */
+
+/*index.html end*/
+
+/* about.html */
+/* page banner (for about and services) */
+#compIntro{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    padding: 1% 4%;
+    box-sizing: border-box;
+}
+
+#compIntro div{
+    text-align: center;
+}
+
+#compIntro h2{
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #025328;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+#compIntro p{
+    font-size: 1.5em;
+    color: #666;
+}
+
+/* page banner (for about and services)end */
+
+/* about content */
+#aboutComp{
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    margin-top: 2%;
+    box-sizing: border-box;
+}
+
+#aboutComp h2{
+    font-size: 2.5em;
+    color: #025328;
+}
+
+#aboutComp p{
+    font-size: 1.3em;
+    width: 50%;
+    color: #666;
+}
+
+#aboutComp div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+#aboutComp img{
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .8);
+}
+
+.bigText{
+    font-size: 2.5em;
+}
+/* about comp end */
+/* about.html end*/
+
+/* services.html */
+/*services content*/
+#services{
+    margin-top: 2%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+    border-radius: 5px;
+}
+
+#ServicesLeft{
+    width: 60%;
+    flex-shrink: 10;
+}
+
+#ServicesLeft h2{
+    font-size: 2em;
+    color: #025328;
+}
+
+#ServicesLeft h3{
+    font-size: 1.4em;
+    color: #025328;
+}
+
+#ServicesLeft p{
+    font-size: 1.3em;
+    color: #666;
+}
+
+#ServicesLeft div{
+    margin-bottom: 50px;
+    border-bottom: 1px dashed black;
+}
+
+/*services content end*/
+
+/* message form */
+#LeaveMessage{
+    width: 25%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
+    height: 400px;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+#LeaveMessage h3{
+    text-align: center;
+    font-size: 1.3em;
+    color: #025328;
+}
+
+#LeaveMessage input{
+    width: 100%;
+    padding: 2%;
+    height: 40px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+#LeaveMessage input[type=submit]{
+    font-size: 1.3em;
+    border: none;
+    background-color: #5aa170;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 3px black;
+}
+
+
+#LeaveMessage input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #8cb598;
+}
+/* message form end */
+/* services.html end*/
+
+/* footer applies to all pages */
+#footer{
+    width: 100%;
+    padding: 0 3%;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 1.3em;
+    color: #666;
+    background-color: #d0ecd9;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        padding: 1%;
+    }
+    h1{
+        width: 100%;
+    }
+
+    #navBar{
+        display: none;
+    }
+    #navBarLinks{
+        width: 50%;
+    }
+
+    #topBody{
+        background-image: none;
+    }
+
+    #topBody p{
+        width: 100%;
+    }
+
+    #menuToggle{
+        display: block;
+    }
+
+    #lowerBody{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .homeAbout{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lowerBody img{
+        width: 40%;
+    }
+
+    
+    #compIntro img{
+        width: 200px;
+    }
+
+    #compIntro{
+        flex-direction: column-reverse;
+    }
+
+    #aboutComp img{
+        width: 250px;
+    }
+
+    #services{
+        flex-direction: column;
+    }
+
+    #ServicesLeft div{
+        padding: 5%;
+        width: 100%;
+        height: 400px;
+        box-sizing: border-box;
+        border: none;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
+        border-radius: 5px;
+    }
+
+    #LeaveMessage{
+        width: 100%;
+    }
+}
